@@ -1,0 +1,31 @@
+@import '../../../assets/styles/global.scss';
+
+.site-wide-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $--theme-black-color;
+    height: 35px;
+
+    .site-wide-banner__group {
+        
+        .site-wide-banner__item {
+            color: $--theme-white-text;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0 10px;
+            font-size: 0.9rem;
+
+            &:hover {
+                color: $--theme-hover-white-text;
+            }
+        }
+    }
+
+    #delivery-info {
+        .site-wide-banner__item {
+            font-style: italic;
+            font-family: 'Libre Baskerville', serif;
+        }
+    }
+}
