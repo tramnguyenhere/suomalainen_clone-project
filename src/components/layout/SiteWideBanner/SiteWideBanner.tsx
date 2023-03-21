@@ -3,7 +3,7 @@ import './SiteWideBanner.scss'
 import { banner } from '../../../data/banner'
 
 
-// Testing
+// Testing 2
 const SiteWideBanner = () => {
   return (
     <div className='site-wide-banner'>
