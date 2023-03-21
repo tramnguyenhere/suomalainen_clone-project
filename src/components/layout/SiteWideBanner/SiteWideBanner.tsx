@@ -2,6 +2,8 @@ import React from 'react'
 import './SiteWideBanner.scss'
 import { banner } from '../../../data/banner'
 
+
+// Testing
 const SiteWideBanner = () => {
   return (
     <div className='site-wide-banner'>
