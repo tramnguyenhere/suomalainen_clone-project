@@ -1,0 +1,62 @@
+@import '../../../assets/styles/global.scss';
+
+.form {
+   position: relative;
+   height: 30px;
+   display: flex;
+   width: 30%;
+   
+   &__input {
+        padding: 10px 15px;
+        border-radius: 20px;
+        font-size: 1rem;
+        width: 100%;
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            opacity: 0.5;
+        }
+    }
+
+    &__button--reset {
+        position: absolute;
+        right: 45px;
+        color: $--theme-blue-color;
+        font-size: .4rem;
+        z-index: 1;
+        background: transparent;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    &__button {
+        height: 100%;
+        position: absolute;
+        right: 0;
+        border: none;
+        outline: none;
+        border-radius: 0 20px 20px 0;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        transition: all 0.2s ease;
+        background: $--theme-hover-white-text;
+
+        &:hover {
+            background: $--theme-hover-background;
+            color: $--theme-hover-white-text;
+        }
+    }
+
+
+}

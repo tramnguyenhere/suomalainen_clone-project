@@ -1,0 +1,10 @@
+@import '../../../assets/styles/global.scss';
+
+.header {
+    background: $--theme-grey-color;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
