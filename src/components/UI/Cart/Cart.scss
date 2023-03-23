@@ -1,0 +1,55 @@
+@import '../../../assets/styles/global.scss';
+
+.cart {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10;
+
+    &-overlay {
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.639);;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+    }
+
+    &__button--close {
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: none;
+        top: 10px;
+        right: calc(20% - 20px);
+        z-index: 12;
+
+        svg {
+            font-size: 2.4rem;
+        }
+    }
+
+    &-list {
+        width: 20%;
+        height: 100%;
+        background: $--theme-hover-white-text;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 11;
+
+        .cart--empty {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
