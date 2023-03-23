@@ -1,23 +1,24 @@
 import React from 'react'
 import './SiteWideBanner.scss'
 import { banner } from '../../../data/banner'
+import NavigationLink from '../../UI/NavigationLink/NavigationLink'
 
 const SiteWideBanner = () => {
   return (
     <div className='site-wide-banner'>
       <div className='site-wide-banner__group'>
         {banner.customerServiceLink.map(item => (
-          <a className='site-wide-banner__item' key={item.id} href={item.link}>{item.label}</a>
+          <NavigationLink id={item.id} className='site-wide-banner__item' link={item.link} label={item.label} />
         ))}
       </div>
       <div className='site-wide-banner__group' id='delivery-info'>
         {banner.freeDeliveryLink.map(item => (
-          <a className='site-wide-banner__item' key={item.id} href={item.link}>{item.label}</a>
+          <NavigationLink id={item.id} className='site-wide-banner__item' link={item.link} label={item.label} />
         ))}
       </div>
       <div className='site-wide-banner__group'>
         {banner.subCompaniesLink.map(item => (
-          <a className='site-wide-banner__item' key={item.id} href={item.link}>{item.label}</a>
+          <NavigationLink id={item.id} className='site-wide-banner__item' link={item.link} label={item.label} />
         ))}
       </div>
     </div>

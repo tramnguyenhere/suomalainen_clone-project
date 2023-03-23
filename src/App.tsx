@@ -1,13 +1,11 @@
 
 import './App.css';
-import Header from './components/layout/Header/Header';
-import SiteWideBanner from './components/layout/SiteWideBanner/SiteWideBanner';
+import Layout from './components/layout/Layout';
 
 function App() {
   return (
     <div className="App">
-      <SiteWideBanner />
-      <Header />
+      <Layout />
     </div>
   );
 }

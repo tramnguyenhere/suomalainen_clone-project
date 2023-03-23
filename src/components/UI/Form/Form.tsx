@@ -1,13 +1,14 @@
 import React from 'react'
 import './Form.scss'
 import CloseIcon from '@mui/icons-material/Close';
+import Button from '../Button/Button';
 
-interface FormInterface {
+interface Props {
   buttonLabel: JSX.Element;
   placeholderText: string;
 }
 
-const Form = ({buttonLabel, placeholderText}: FormInterface) => {
+const Form = ({buttonLabel, placeholderText}: Props) => {
   const formHandler = () => {
 
   }
@@ -15,12 +16,8 @@ const Form = ({buttonLabel, placeholderText}: FormInterface) => {
   return (
     <form className='form' onSubmit={formHandler}>
       <input className='form__input' placeholder={placeholderText} />
-      <button className="form__button--reset">
-        <CloseIcon />
-      </button>
-      <button className='form__button' type='submit'>
-        {buttonLabel}
-      </button>
+      <Button className='form__button--reset' label={<CloseIcon />}/>
+      <Button className='form__button'  type='submit' label={buttonLabel}/>
     </form>
   )
 }
