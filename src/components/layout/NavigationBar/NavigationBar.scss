@@ -7,4 +7,20 @@
     align-items: center;
     justify-content: space-between;
     background: $--theme-beige-color;
+    padding: 0 10px;
+
+    .category__button {
+        background: transparent;
+        border: none;
+        text-transform: capitalize;
+        color: $--theme-black-color;
+        font-size: .9rem;
+        font-weight: 600;
+        padding: 0 10px;
+
+        &:hover {
+            color: $--theme-hover-background;
+        }
+    }
+
 }
