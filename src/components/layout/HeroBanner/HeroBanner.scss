@@ -42,7 +42,10 @@
             width: fit-content;
             padding: 10px 15px;
             font-weight: 700;
-               
+            
+            &:hover {
+                opacity: .6;
+            }
         }
 
     }

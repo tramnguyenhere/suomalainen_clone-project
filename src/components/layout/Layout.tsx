@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux'
 import { RootState } from '../../redux/store'
 import NavigationBar from './NavigationBar/NavigationBar'
 import HeroBanner from './HeroBanner/HeroBanner'
+import Section from '../UI/Section/Section'
 
 const Layout = () => {
     const showCart = useSelector((state: RootState) => (state.cartUI.cartIsVisible))
@@ -17,6 +18,7 @@ const Layout = () => {
       {showCart && <Cart />}
       <NavigationBar />
       <HeroBanner />
+      <Section />
     </>
   )
 }
