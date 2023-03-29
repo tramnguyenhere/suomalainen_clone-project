@@ -6,7 +6,7 @@ import SectionSlider from './SectionSlider/SectionSlider'
 const Section = () => {
   return (
     <div className='section'>
-      <SectionHeader />
+      <SectionHeader sectionHeader='Valokeilassa Enni Mustonen'/>
       <SectionSlider />
     </div>
   )

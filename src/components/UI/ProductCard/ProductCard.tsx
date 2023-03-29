@@ -4,19 +4,31 @@ import Button from '../Button/Button'
 
 const ProductCard = () => {
   return (
-      <div className='card'>
-      <div className="card-product">
+    <div className='card'>
+      <a href='/collections/kirjailija-enni-mustonen/products/tekija-signeerattu' className="card-product">
         <img src="assets/images/book-cover.jpg" alt="book-cover" className="card-image" />
-        <div className="card-badge">
+        <span className="card-badge">
           -50%
-        </div>
-      </div>
+        </span>
+      </a>
       <div className="card-details">
-        <span className="card-details__title">Kasvattitytar</span>
+        <a href='/collections/kirjailija-enni-mustonen/products/tekija-signeerattu' className="card-details__title">Taiteilijan vaimo</a>
         <span className="card-details__author">Enni Mustonen</span>
-        <div className="card-details__rating"></div>
       </div>
-      <Button label='Lisa koriin' className='card__button'/>
+      <div className="card-actions">
+        <div className="card-details__rating">
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+        </div>
+        <div className="card-prices">
+          <span className='discounted-price'>12,95 $</span>
+          <span className='before-discount-price'>24,95 $</span>
+        </div>
+        <Button label='Lisää koriin' className='card__button'/>
+      </div>
     </div>
   )
 }

@@ -1,1 +1,26 @@
 @import '../../../../assets/styles/global.scss';
+
+.section-slider {
+    margin: 40px -20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .section-slider__button {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: none;
+        background: $--theme-hover-background;
+        color: $--theme-hover-white-text;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        i {
+            margin: 0;
+        }
+    }
+}

@@ -1,9 +1,102 @@
 @import '../../../assets/styles/global.scss';
 
 .card {
-    height: 100%;
+    height: fit-content;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
-    &-image {
-        width: 180px;
+    .card-product{
+        position: relative;
+        margin-bottom: 20px;
+
+        .card-image{
+            height: 260px;
+        }
+    
+        .card-badge{
+            position: absolute;
+            bottom: -10px;
+            left: -20px;
+            background: $--theme-orange-color;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: $--theme-hover-white-text;
+            font-weight: 600;
+            font-size: .9rem;
+        }
     }
+
+    .card-details{
+        display: flex;
+        flex-direction: column;
+        font-size: .8rem;
+        width: 100%;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        text-decoration: none;
+
+        .card-details__title {
+            font-weight: 600;
+            padding: 5px 0;
+            color: $--theme-black-color;
+        }
+
+        .card-details__author {
+            color: $--theme-secondary-text;
+            padding-bottom: 5px;
+        }
+
+    }
+    
+    .card-actions {
+        width: 100%;
+        
+        .card-details__rating {
+            color: $--theme-highlight-text;
+        }
+
+        .card-prices {
+            margin-bottom: 10px;
+
+            .discounted-price {
+                font-size: 1rem;
+                font-weight: 700;
+                margin-right: 10px;
+            }
+
+            .before-discount-price {
+                font-size: .9rem;
+                color: $--theme-secondary-text;
+                text-decoration: line-through;
+            }
+
+            .normal-price {
+
+            }
+
+        }
+
+        .card__button {
+            width: 100%;
+            height: fit-content;
+            padding: 5px 0;
+            background: transparent;
+            border-radius: 20px;
+            font-weight: 700;
+
+            &:hover {
+                background: $--theme-hover-background;
+                color: $--theme-hover-white-text;
+            }
+        }
+    }
+
+
 }
